@@ -1,0 +1,98 @@
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff6ec4, #7873f5, #67d7f0);
+    background-size: 400% 400%;
+    animation: gradient-animation 8s ease infinite;
+    color: #ffffff;
+}
+
+/* Main Container */
+.container {
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading Style */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Timer Section */
+#timer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Time Segment Styling */
+.time-segment {
+    width: 100px;
+    height: 120px;
+    background: linear-gradient(145deg, #ff80d5, #6b6fff);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5),
+                -6px -6px 12px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.time-segment:hover {
+    transform: translateY(-10px);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5),
+                -10px -10px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Time Value Styling */
+span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Label Styling */
+p {
+    margin: 0;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #f3f3f3;
+}
+
+/* Footer Styling */
+.footer {
+    margin-top: 20px;
+    font-size: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Background Gradient Animation */
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
